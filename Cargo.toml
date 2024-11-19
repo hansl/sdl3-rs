@@ -27,7 +27,9 @@ libc = "0.2.92"
 lazy_static = "1.4.0"
 
 [dependencies.sdl3-sys]
-version = "0.1.1"
+#version = "0.1.1"
+git = "https://github.com/hansl/sdl3-sys-rs.git"
+branch = "unix-console-build"
 
 [dependencies.c_vec]
 # allow both 1.* and 2.0 versions
@@ -53,6 +55,7 @@ static-link = ["sdl3-sys/link-static"]
 link-framework = ["sdl3-sys/link-framework"]
 build-from-source = ["sdl3-sys/build-from-source"]
 build-from-source-static = ["sdl3-sys/build-from-source-static"]
+build-from-source-unix-console = ["sdl3-sys/console-build"]
 
 unsafe_textures = []
 default = []
